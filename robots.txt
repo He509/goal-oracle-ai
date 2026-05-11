@@ -1,0 +1,13 @@
+# Goal Oracle AI - robots.txt
+User-agent: *
+Allow: /
+
+# Block crawling of system files
+Disallow: /_redirects
+Disallow: /site.webmanifest
+
+# Sitemap location
+Sitemap: https://goaloracleai.com/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
