@@ -1,0 +1,16 @@
+# Cloudflare Pages _redirects file
+# Ensure clean URLs work but DON'T cause redirect issues
+# Redirect old/wrong URLs that Google indexed
+/he         /             301
+/en         /             301
+# Premier League variations
+/premier    /premier-league.html  301
+/epl        /premier-league.html  301
+# La Liga variations
+/laliga     /la-liga.html  301
+# Serie A variations
+/seriea     /serie-a.html  301
+# Bundesliga variations
+/bundes     /bundesliga.html  301
+# Ligue 1 variations
+/ligue1     /ligue-1.html  301
