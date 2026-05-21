@@ -1,0 +1,25 @@
+# Redirect all .html URLs to clean URLs (301 permanent)
+# This prevents duplicate content issues in Google Search Console
+
+# Home pages
+/index.html              /                                301
+/he.html                 /he                               301
+
+# Leagues
+/premier-league.html     /premier-league                   301
+/la-liga.html            /la-liga                          301
+/serie-a.html            /serie-a                          301
+/bundesliga.html         /bundesliga                       301
+/ligue-1.html            /ligue-1                          301
+
+# World Cup hub
+/world-cup-2026.html     /world-cup-2026                   301
+/world-cup-2026-he.html  /world-cup-2026-he                301
+
+# Squad pages
+/france-world-cup-2026-squad.html      /france-world-cup-2026-squad       301
+/france-world-cup-2026-squad-he.html   /france-world-cup-2026-squad-he    301
+/brazil-world-cup-2026-squad.html      /brazil-world-cup-2026-squad       301
+/brazil-world-cup-2026-squad-he.html   /brazil-world-cup-2026-squad-he    301
+/portugal-world-cup-2026-squad.html    /portugal-world-cup-2026-squad     301
+/portugal-world-cup-2026-squad-he.html /portugal-world-cup-2026-squad-he  301
