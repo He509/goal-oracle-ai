@@ -1400,7 +1400,7 @@ main{padding:10px 10px 60px}
       "description": "AI prediction for Spain vs Iraq friendly. Spain extreme favorites at 1.01 odds with 27-of-28 unbeaten run as Euro 2024 champions.",
       "startDate": "2026-06-04T19:00:00+00:00",
       "endDate": "2026-06-04T21:00:00+00:00",
-      "eventStatus": "https://schema.org/EventScheduled",
+      "eventStatus": "https://schema.org/EventCompleted",
       "location": {
         "@type": "Place",
         "name": "Estadio Riazor",
@@ -1433,7 +1433,7 @@ main{padding:10px 10px 60px}
       "description": "AI prediction for France vs Ivory Coast. France #1 FIFA, 10 unbeaten in Nantes. Mbappé one goal from equaling Giroud's record (57).",
       "startDate": "2026-06-04T19:10:00+00:00",
       "endDate": "2026-06-04T21:10:00+00:00",
-      "eventStatus": "https://schema.org/EventScheduled",
+      "eventStatus": "https://schema.org/EventCompleted",
       "location": {
         "@type": "Place",
         "name": "Stade de la Beaujoire",
@@ -1574,6 +1574,83 @@ main{padding:10px 10px 60px}
 }
 </style>
 <!-- ===== END CHELSEA-CITY MOBILE CSS ===== -->
+
+<style id="warmup-cards-mobile-fix">
+/* === Mobile responsiveness for all warmup/Messi cards === */
+@media (max-width: 480px) {
+  body { overflow-x: hidden !important; }
+  
+  /* Card containers respect viewport */
+  div[style*="max-width:860px"][style*="margin:0 auto"] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* All children of cards: allow text breaks + respect width */
+  div[style*="max-width:860px"][style*="margin:0 auto"] *,
+  article[style*="background"] * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    word-wrap: break-word !important;
+  }
+  
+  /* Reduce inner padding on all card sections */
+  div[style*="padding:17px 26px"],
+  div[style*="padding:14px 22px"] {
+    padding: 11px 12px !important;
+  }
+  div[style*="padding:0 26px"],
+  div[style*="padding:0 22px"] {
+    padding: 0 12px !important;
+  }
+  div[style*="padding:24px 26px 17px"],
+  div[style*="padding:20px 22px 14px"] {
+    padding: 16px 12px 11px !important;
+  }
+  
+  /* Compact letter-spacing on small screens (was causing overflow) */
+  div[style*="letter-spacing:3px"], 
+  div[style*="letter-spacing: 3px"],
+  span[style*="letter-spacing:3px"],
+  span[style*="letter-spacing: 3px"],
+  div[style*="letter-spacing:2.5px"],
+  span[style*="letter-spacing:2.5px"] {
+    letter-spacing: 0.5px !important;
+  }
+  div[style*="letter-spacing:1.8px"],
+  span[style*="letter-spacing:1.8px"],
+  div[style*="letter-spacing:1.5px"],
+  span[style*="letter-spacing:1.5px"],
+  div[style*="letter-spacing:2px"],
+  span[style*="letter-spacing:2px"] {
+    letter-spacing: 0.3px !important;
+  }
+  
+  /* Compact 1X2 grid (column labels like "IVORY COAST" overflow on small screens) */
+  div[style*="grid-template-columns:1fr 1fr 1fr"] {
+    gap: 6px !important;
+  }
+  div[style*="grid-template-columns:1fr 1fr 1fr"] > div {
+    padding: 11px 4px !important;
+  }
+  
+  /* Shrink long title H3s */
+  h3[style*="font-size:31px"],
+  h3[style*="font-size:29px"],
+  h3[style*="font-size:26px"] {
+    font-size: 21px !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* Card header status badges */
+  div[style*="max-width:860px"] span[style*="padding:5px 14px"] {
+    padding: 4px 10px !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <!-- ========================================= -->
@@ -2426,37 +2503,37 @@ main{padding:10px 10px 60px}
 </div>
 <!-- ===== END MESSI BREAKING NEWS ===== -->
 
-<!-- ===== HOT CARD: SPAIN_VS_IRAQ - UPCOMING ===== -->
+<!-- ===== HOT CARD: SPAIN_VS_IRAQ - FT 1:1 DRAW ===== -->
 <div style="position:relative;z-index:1;max-width:860px;margin:0 auto 22px;padding:0 29px">
-<div style="background:linear-gradient(160deg,#0a0e1c,#2d1a1a,#0a0e1c);border:2px solid rgba(170,21,27,0.55);border-radius:19px;overflow:hidden;font-family:'Exo 2',sans-serif;box-shadow:0 10px 38px rgba(170,21,27,0.22)">
-  <div style="background:linear-gradient(180deg,#aa151b 0%,#f4cdd0 50%,#aa151b 100%);padding:17px 26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid rgba(255,255,255,0.3)">
+<div style="background:linear-gradient(160deg,#0a0e1c,#2a1818,#0a0e1c);border:2px solid rgba(239,68,68,0.4);border-radius:19px;overflow:hidden;font-family:'Exo 2',sans-serif;box-shadow:0 10px 38px rgba(239,68,68,0.18)">
+  <div style="background:linear-gradient(180deg,#8a1518 0%,#aa151b 50%,#8a1518 100%);padding:17px 26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid rgba(255,255,255,0.3)">
     <div style="display:flex;align-items:center;gap:12px">
-      <span style="font-family:'Orbitron',sans-serif;font-size:12px;color:#0a0e1c;letter-spacing:3px;font-weight:900;background:rgba(255,255,255,0.85);padding:4px 10px;border-radius:5px">🏆 INTERNATIONAL FRIENDLY · WC WARMUP</span>
+      <span style="font-family:'Orbitron',sans-serif;font-size:12px;color:#fff;letter-spacing:3px;font-weight:700">🏆 INTERNATIONAL FRIENDLY · WC WARMUP</span>
     </div>
     <div style="display:flex;align-items:center;gap:10px">
-      <span style="background:rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.3);border-radius:7px;padding:5px 14px;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;color:#fff;letter-spacing:2.5px">RIAZOR · A CORUÑA</span>
-      <span style="background:#fbbf24;border-radius:7px;padding:5px 11px;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:900;color:#0a0e1c;letter-spacing:1.8px">⏳ TONIGHT 20:00 BST</span>
+      <span style="background:rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.3);border-radius:7px;padding:5px 14px;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;color:#fff;letter-spacing:2.5px">RIAZOR · A CORUÑA</span>
+      <span style="background:#ef4444;border-radius:7px;padding:5px 11px;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:900;color:#fff;letter-spacing:1.8px">❌ FT 1:1 · 0/3 LOST</span>
     </div>
   </div>
   
   <div style="padding:24px 26px 17px;text-align:center">
-    <h3 style="font-family:'Cinzel',serif;font-size:31px;font-weight:900;background:linear-gradient(180deg,#fff5c0,#ffd700,#daa520);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:0 0 7px 0;letter-spacing:1.2px">Spain vs Iraq — AI World Cup Warmup Prediction</h3>
-    <div style="font-size:14px;color:#8a8d9a">June 4, 2026 · 20:00 BST · Estadio Riazor, A Coruña</div>
+    <h3 style="font-family:'Cinzel',serif;font-size:31px;font-weight:900;background:linear-gradient(180deg,#fca5a5,#ef4444,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:0 0 7px 0;letter-spacing:1.2px">Spain 1 - 1 Iraq · Shock Draw!</h3>
+    <div style="font-size:14px;color:#fca5a5;font-weight:700">June 4, 2026 · Riazor, A Coruña · Iraq held Euro champions to surprise draw</div>
   </div>
   
   <div style="padding:0 26px 17px">
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
-      <div style="background:rgba(34,197,94,0.13);border:1px solid rgba(34,197,94,0.45);border-radius:12px;padding:17px 10px;text-align:center">
-        <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#86efac;letter-spacing:1.8px;margin-bottom:5px;font-weight:700">SPAIN</div>
-        <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#22c55e">1.01</div>
-        <div style="font-size:12px;color:#86efac;margin-top:2px;font-weight:700">70%</div>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:17px 10px;text-align:center;opacity:0.45">
+        <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#86efac;letter-spacing:1.8px;margin-bottom:5px">SPAIN</div>
+        <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#94a3b8">1.01</div>
+        <div style="font-size:12px;color:#64748b;margin-top:2px">70% - DRAW</div>
       </div>
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:17px 10px;text-align:center">
-        <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#fbbf24;letter-spacing:1.8px;margin-bottom:5px">DRAW</div>
-        <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#94a3b8">23.00</div>
-        <div style="font-size:12px;color:#64748b;margin-top:2px">5%</div>
+      <div style="background:rgba(239,68,68,0.18);border:2px solid #ef4444;border-radius:12px;padding:17px 10px;text-align:center">
+        <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#ef4444;letter-spacing:1.8px;margin-bottom:5px;font-weight:900">✅ DRAW</div>
+        <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#fca5a5">23.00</div>
+        <div style="font-size:12px;color:#fca5a5;margin-top:2px;font-weight:700">5% UPSET</div>
       </div>
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:17px 10px;text-align:center">
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:17px 10px;text-align:center;opacity:0.45">
         <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#a5b4fc;letter-spacing:1.8px;margin-bottom:5px">IRAQ</div>
         <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#94a3b8">44.00</div>
         <div style="font-size:12px;color:#64748b;margin-top:2px">2%</div>
@@ -2465,89 +2542,36 @@ main{padding:10px 10px 60px}
   </div>
 
   <div style="padding:0 26px 17px">
-    <div style="background:rgba(212,165,40,0.07);border:1px solid rgba(212,165,40,0.3);border-radius:12px;padding:17px">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#ffd700;letter-spacing:1.8px;margin-bottom:12px;font-weight:700;text-align:center">📊 xG DATA · LAST 5 MATCHES</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div style="background:rgba(255,255,255,0.03);border-radius:10px;padding:12px;text-align:center">
-          <div style="font-family:'Cinzel',serif;font-size:16px;color:#fff;font-weight:700;margin-bottom:7px">Spain</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px">
-            <div><div style="font-size:11px;color:#8a8d9a">xG</div><div style="font-size:17px;color:#22c55e;font-weight:900">2.57</div></div>
-            <div><div style="font-size:11px;color:#8a8d9a">xGA</div><div style="font-size:17px;color:#22c55e;font-weight:900">0.84</div></div>
-            <div><div style="font-size:11px;color:#8a8d9a">PPG</div><div style="font-size:17px;color:#22c55e;font-weight:900">2.40</div></div>
-          </div>
-        </div>
-        <div style="background:rgba(255,255,255,0.03);border-radius:10px;padding:12px;text-align:center">
-          <div style="font-family:'Cinzel',serif;font-size:16px;color:#fff;font-weight:700;margin-bottom:7px">Iraq</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px">
-            <div><div style="font-size:11px;color:#8a8d9a">xG</div><div style="font-size:17px;color:#fbbf24;font-weight:900">0.87</div></div>
-            <div><div style="font-size:11px;color:#8a8d9a">xGA</div><div style="font-size:17px;color:#fbbf24;font-weight:900">1.58</div></div>
-            <div><div style="font-size:11px;color:#8a8d9a">PPG</div><div style="font-size:17px;color:#fbbf24;font-weight:900">1.70</div></div>
-          </div>
-        </div>
-      </div>
-      <div style="font-size:12px;color:#64748b;margin-top:10px;text-align:center">xG = goals expected to score · xGA = goals expected to concede · PPG = points per game</div>
-    </div>
-  </div>
-
-  <div style="padding:0 26px 17px">
-    <div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:17px">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#fca5a5;letter-spacing:1.8px;margin-bottom:10px;font-weight:700">⚕️ INJURIES & ABSENTEES</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:14px;color:#c9c9d9">
-        <div><strong style="color:#86efac">Spain:</strong> Yamal · Nico Williams · Merino (out) · Raya/Zubimendi/Fabian (may rest after UCL final)</div>
-        <div><strong style="color:#a5b4fc">Iraq:</strong> Aymen Hussein (33 goals in 93 caps) · Zidane Iqbal (midfield)</div>
-      </div>
-    </div>
-  </div>
-
-  <div style="padding:0 26px 17px">
-    <div style="background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.35);border-radius:12px;padding:17px">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#22c55e;letter-spacing:1.8px;margin-bottom:10px;font-weight:700">🤖 AI ANALYSIS</div>
-      <div style="font-size:15px;color:#c9c9d9;line-height:1.7">
-        Spain are <strong style="color:#22c55e">extreme favorites at 1.01 odds</strong> - virtually 100% certain. Euro 2024 champions haven't lost 27 of 28 last matches (W22 D5). 
-        Iraq - <strong style="color:#fff">#57 in FIFA rankings</strong>, first World Cup since 1986, in the Group of Death (France/Senegal/Norway). 
-        The gap is enormous - <strong style="color:#22c55e">3.1 goals per match for Spain vs 1.0 for Iraq</strong>. 
-        Sports Mole predicts <strong style="color:#fbbf24">Spain 3-0 Iraq</strong>. We agree.
-      </div>
-    </div>
-  </div>
-
-  <div style="padding:0 26px 17px">
-    <div style="background:rgba(0,0,0,0.3);border:1px solid rgba(212,165,40,0.3);border-radius:12px;padding:17px">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#ffd700;letter-spacing:1.8px;margin-bottom:14px;font-weight:700">🎯 OUR 3 PICKS</div>
+    <div style="background:rgba(0,0,0,0.3);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:17px">
+      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#fca5a5;letter-spacing:1.8px;margin-bottom:14px;font-weight:700">🎯 OUR 3 PICKS - TOUGH NIGHT</div>
       
-      <div style="margin-bottom:14px;padding:14px;background:rgba(34,197,94,0.1);border-left:4px solid #22c55e;border-radius:7px">
+      <div style="margin-bottom:14px;padding:14px;background:rgba(239,68,68,0.06);border-left:4px solid #ef4444;border-radius:7px">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;flex-wrap:wrap;gap:5px">
-          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#86efac">✅ PRIMARY: Spain Win</div>
-          <span style="background:rgba(34,197,94,0.25);color:#86efac;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">70% · ODDS 1.01</span>
+          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#fca5a5">❌ Spain Win</div>
+          <span style="background:rgba(239,68,68,0.25);color:#fca5a5;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">LOST</span>
         </div>
-        <div style="font-size:14px;color:#8a8d9a">Extreme favorite · 27 of 28 unbeaten · 55-place FIFA rank difference</div>
+        <div style="font-size:14px;color:#8a8d9a">Despite 1.01 odds (near-certain!) · Iraq held firm · Spain missing Yamal & Williams felt heavy</div>
       </div>
 
-      <div style="margin-bottom:14px;padding:14px;background:rgba(34,197,94,0.1);border-left:4px solid #22c55e;border-radius:7px">
+      <div style="margin-bottom:14px;padding:14px;background:rgba(239,68,68,0.06);border-left:4px solid #ef4444;border-radius:7px">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;flex-wrap:wrap;gap:5px">
-          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#86efac">✅ Over 2.5 Goals</div>
-          <span style="background:rgba(34,197,94,0.25);color:#86efac;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">55% · ODDS 1.25</span>
+          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#fca5a5">❌ Over 2.5 Goals</div>
+          <span style="background:rgba(239,68,68,0.25);color:#fca5a5;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">LOST</span>
         </div>
-        <div style="font-size:14px;color:#8a8d9a">Spain averages 3.1 goals at home · 21 shots per game · clinical vs weak defense</div>
+        <div style="font-size:14px;color:#8a8d9a">Only 2 goals scored (1:1) · Spain's 27-game unbeaten run came to an end</div>
       </div>
 
-      <div style="padding:14px;background:rgba(34,197,94,0.1);border-left:4px solid #22c55e;border-radius:7px">
+      <div style="padding:14px;background:rgba(239,68,68,0.06);border-left:4px solid #ef4444;border-radius:7px">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;flex-wrap:wrap;gap:5px">
-          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#86efac">✅ Iraq No Score</div>
-          <span style="background:rgba(34,197,94,0.25);color:#86efac;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">70% · ODDS 1.30</span>
+          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#fca5a5">❌ Iraq No Score</div>
+          <span style="background:rgba(239,68,68,0.25);color:#fca5a5;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">LOST</span>
         </div>
-        <div style="font-size:14px;color:#8a8d9a">Spain 70% clean sheets · Iraq failed to score in 40% of matches</div>
+        <div style="font-size:14px;color:#8a8d9a">Iraq DID score · Spain's 70% clean sheet rate broken · Iraq could surprise at the World Cup</div>
       </div>
-    </div>
-  </div>
 
-  <div style="padding:0 26px 17px">
-    <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:14px;text-align:center">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#ffd700;letter-spacing:1.8px;margin-bottom:7px;font-weight:700">⚽ OVER 2.5 GOALS: 55%</div>
-      <div style="background:rgba(0,0,0,0.4);border-radius:7px;height:14px;overflow:hidden">
-        <div style="background:linear-gradient(90deg,#22c55e,#86efac);height:100%;width:55%"></div>
+      <div style="margin-top:14px;padding:13px;background:rgba(255,215,0,0.08);border:1px solid rgba(255,215,0,0.3);border-radius:7px;text-align:center">
+        <div style="font-size:14px;color:#ffd700;font-weight:700">💡 Proof that no odds are guaranteed: Spain at 1.01 (99% implied) didn't win. Pre-WC friendlies are the most unpredictable matches.</div>
       </div>
-      <div style="font-size:12px;color:#64748b;margin-top:7px">Chance of 3+ total goals in the match</div>
     </div>
   </div>
 
@@ -2557,7 +2581,7 @@ main{padding:10px 10px 60px}
         <span style="font-family:'Orbitron',sans-serif;font-size:12px;color:#ffd700;letter-spacing:2.5px;font-weight:700">🏆 RELATED:</span>
         <a href="/world-cup-2026" style="font-family:'Exo 2',sans-serif;font-size:14px;color:#e8d08c;text-decoration:none;padding:5px 12px;border:1px solid rgba(212,165,40,0.3);border-radius:7px;background:rgba(212,165,40,0.05);font-weight:600">⚽ WC 2026 →</a>
         <a href="/spain-world-cup-2026-squad" style="font-family:'Exo 2',sans-serif;font-size:14px;color:#e8d08c;text-decoration:none;padding:5px 12px;border:1px solid rgba(212,165,40,0.3);border-radius:7px;background:rgba(212,165,40,0.05);font-weight:600">🇪🇸 Spain Squad →</a>
-        <a href="/world-cup-2026-golden-boot" style="font-family:'Exo 2',sans-serif;font-size:14px;color:#e8d08c;text-decoration:none;padding:5px 12px;border:1px solid rgba(212,165,40,0.3);border-radius:7px;background:rgba(212,165,40,0.05);font-weight:600">👑 Golden Boot →</a>
+        <a href="/world-cup-2026-dark-horses" style="font-family:'Exo 2',sans-serif;font-size:14px;color:#e8d08c;text-decoration:none;padding:5px 12px;border:1px solid rgba(212,165,40,0.3);border-radius:7px;background:rgba(212,165,40,0.05);font-weight:600">🐎 Dark Horses →</a>
       </div>
     </div>
   </div>
@@ -2565,129 +2589,75 @@ main{padding:10px 10px 60px}
 </div>
 <!-- ===== END CARD: SPAIN_VS_IRAQ ===== -->
 
-<!-- ===== HOT CARD: FRANCE_VS_IVORY_COAST - UPCOMING ===== -->
+<!-- ===== HOT CARD: FRANCE_VS_IVORY_COAST - FT 1:2 LOST ===== -->
 <div style="position:relative;z-index:1;max-width:860px;margin:0 auto 22px;padding:0 29px">
-<div style="background:linear-gradient(160deg,#0a0e1c,#1a1f3a,#0a0e1c);border:2px solid rgba(0,85,164,0.55);border-radius:19px;overflow:hidden;font-family:'Exo 2',sans-serif;box-shadow:0 10px 38px rgba(0,85,164,0.22)">
-  <div style="background:linear-gradient(180deg,#0055A4 0%,#3367a8 50%,#0055A4 100%);padding:17px 26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid rgba(255,255,255,0.3)">
+<div style="background:linear-gradient(160deg,#0a0e1c,#1a1f3a,#0a0e1c);border:2px solid rgba(239,68,68,0.4);border-radius:19px;overflow:hidden;font-family:'Exo 2',sans-serif;box-shadow:0 10px 38px rgba(239,68,68,0.18)">
+  <div style="background:linear-gradient(180deg,#0d3d5c 0%,#0055A4 50%,#0d3d5c 100%);padding:17px 26px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid rgba(255,255,255,0.3)">
     <div style="display:flex;align-items:center;gap:12px">
       <span style="font-family:'Orbitron',sans-serif;font-size:12px;color:#fff;letter-spacing:3px;font-weight:700">🏆 INTERNATIONAL FRIENDLY · WC WARMUP</span>
     </div>
     <div style="display:flex;align-items:center;gap:10px">
-      <span style="background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.3);border-radius:7px;padding:5px 14px;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;color:#fff;letter-spacing:2.5px">BEAUJOIRE · NANTES</span>
-      <span style="background:#fbbf24;border-radius:7px;padding:5px 11px;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:900;color:#0a0e1c;letter-spacing:1.8px">⏳ TONIGHT 20:10 BST</span>
+      <span style="background:rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.3);border-radius:7px;padding:5px 14px;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;color:#fff;letter-spacing:2.5px">BEAUJOIRE · NANTES</span>
+      <span style="background:#ef4444;border-radius:7px;padding:5px 11px;font-family:'Orbitron',sans-serif;font-size:11px;font-weight:900;color:#fff;letter-spacing:1.8px">❌ FT 1:2 · 1/3 LOST</span>
     </div>
   </div>
   
   <div style="padding:24px 26px 17px;text-align:center">
-    <h3 style="font-family:'Cinzel',serif;font-size:31px;font-weight:900;background:linear-gradient(180deg,#fff5c0,#ffd700,#daa520);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:0 0 7px 0;letter-spacing:1.2px">France vs Ivory Coast — AI Warmup Prediction</h3>
-    <div style="font-size:14px;color:#8a8d9a">June 4, 2026 · 20:10 BST · Stade de la Beaujoire, Nantes</div>
+    <h3 style="font-family:'Cinzel',serif;font-size:31px;font-weight:900;background:linear-gradient(180deg,#fca5a5,#ef4444,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:0 0 7px 0;letter-spacing:1.2px">France 1 - 2 Ivory Coast · Upset of the Year!</h3>
+    <div style="font-size:14px;color:#fca5a5;font-weight:700">June 4, 2026 · Beaujoire, Nantes · Ivory Coast stunned the World Cup favorites</div>
   </div>
   
   <div style="padding:0 26px 17px">
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
-      <div style="background:rgba(34,197,94,0.13);border:1px solid rgba(34,197,94,0.45);border-radius:12px;padding:17px 10px;text-align:center">
-        <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#86efac;letter-spacing:1.8px;margin-bottom:5px;font-weight:700">FRANCE</div>
-        <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#22c55e">1.25</div>
-        <div style="font-size:12px;color:#86efac;margin-top:2px;font-weight:700">80%</div>
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:17px 10px;text-align:center;opacity:0.45">
+        <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#86efac;letter-spacing:1.8px;margin-bottom:5px">FRANCE</div>
+        <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#94a3b8">1.25</div>
+        <div style="font-size:12px;color:#64748b;margin-top:2px">80% - LOST</div>
       </div>
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:17px 10px;text-align:center">
+      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:17px 10px;text-align:center;opacity:0.45">
         <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#fbbf24;letter-spacing:1.8px;margin-bottom:5px">DRAW</div>
         <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#94a3b8">6.56</div>
         <div style="font-size:12px;color:#64748b;margin-top:2px">10%</div>
       </div>
-      <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:17px 10px;text-align:center">
-        <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#a5b4fc;letter-spacing:1.8px;margin-bottom:5px">IVORY COAST</div>
-        <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#94a3b8">7.00</div>
-        <div style="font-size:12px;color:#64748b;margin-top:2px">10%</div>
+      <div style="background:rgba(239,68,68,0.18);border:2px solid #ef4444;border-radius:12px;padding:17px 10px;text-align:center">
+        <div style="font-family:'Orbitron',sans-serif;font-size:12px;color:#ef4444;letter-spacing:1.8px;margin-bottom:5px;font-weight:900">✅ IVORY COAST WON</div>
+        <div style="font-family:'Cinzel',serif;font-size:29px;font-weight:900;color:#fca5a5">7.00</div>
+        <div style="font-size:12px;color:#fca5a5;margin-top:2px;font-weight:700">10% UPSET</div>
       </div>
     </div>
   </div>
 
   <div style="padding:0 26px 17px">
-    <div style="background:rgba(212,165,40,0.07);border:1px solid rgba(212,165,40,0.3);border-radius:12px;padding:17px">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#ffd700;letter-spacing:1.8px;margin-bottom:12px;font-weight:700;text-align:center">📊 xG DATA · LAST 5 MATCHES</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div style="background:rgba(255,255,255,0.03);border-radius:10px;padding:12px;text-align:center">
-          <div style="font-family:'Cinzel',serif;font-size:16px;color:#fff;font-weight:700;margin-bottom:7px">France</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px">
-            <div><div style="font-size:11px;color:#8a8d9a">xG</div><div style="font-size:17px;color:#22c55e;font-weight:900">2.94</div></div>
-            <div><div style="font-size:11px;color:#8a8d9a">xGA</div><div style="font-size:17px;color:#22c55e;font-weight:900">0.36</div></div>
-            <div><div style="font-size:11px;color:#8a8d9a">PPG</div><div style="font-size:17px;color:#22c55e;font-weight:900">3.00</div></div>
-          </div>
-        </div>
-        <div style="background:rgba(255,255,255,0.03);border-radius:10px;padding:12px;text-align:center">
-          <div style="font-family:'Cinzel',serif;font-size:16px;color:#fff;font-weight:700;margin-bottom:7px">Ivory Coast</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px">
-            <div><div style="font-size:11px;color:#8a8d9a">xG</div><div style="font-size:17px;color:#fbbf24;font-weight:900">1.35</div></div>
-            <div><div style="font-size:11px;color:#8a8d9a">xGA</div><div style="font-size:17px;color:#fbbf24;font-weight:900">0.73</div></div>
-            <div><div style="font-size:11px;color:#8a8d9a">PPG</div><div style="font-size:17px;color:#fbbf24;font-weight:900">2.20</div></div>
-          </div>
-        </div>
-      </div>
-      <div style="font-size:12px;color:#64748b;margin-top:10px;text-align:center">xG = goals expected to score · xGA = goals expected to concede · PPG = points per game</div>
-    </div>
-  </div>
-
-  <div style="padding:0 26px 17px">
-    <div style="background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:17px">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#fca5a5;letter-spacing:1.8px;margin-bottom:10px;font-weight:700">⚕️ INJURIES & ABSENTEES</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:14px;color:#c9c9d9">
-        <div><strong style="color:#86efac">France:</strong> Saliba (back, doubtful) · Dembele/Doue/Barcola/Zaire-Emery/Hernandez (may rest after UCL) · Kante (35) may start</div>
-        <div><strong style="color:#a5b4fc">Ivory Coast:</strong> Akpa (injured) · Operi replaces · Nicolas Pepe (3 goals+4 assists in 6 La Liga games)</div>
-      </div>
-    </div>
-  </div>
-
-  <div style="padding:0 26px 17px">
-    <div style="background:rgba(34,197,94,0.06);border:1px solid rgba(34,197,94,0.35);border-radius:12px;padding:17px">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#22c55e;letter-spacing:1.8px;margin-bottom:10px;font-weight:700">🤖 AI ANALYSIS</div>
-      <div style="font-size:15px;color:#c9c9d9;line-height:1.7">
-        France are <strong style="color:#22c55e">#1 in FIFA rankings</strong> and favorites to reach a third consecutive WC final. 
-        In Nantes - <strong style="color:#fff">10 matches unbeaten (W9 D1)</strong>. 
-        Mbappé <strong style="color:#fbbf24">one goal away from equaling Giroud's all-time France record (57 goals)</strong>. 
-        Ivory Coast are talented (#34 FIFA, won 8 of 10 qualifiers with 25 unanswered goals), but the gap is 33 places. 
-        Model expects France to score 2+ goals - they've scored in 100% of recent matches. <strong style="color:#fbbf24">Sports Mole predicts France 3-1</strong>.
-      </div>
-    </div>
-  </div>
-
-  <div style="padding:0 26px 17px">
-    <div style="background:rgba(0,0,0,0.3);border:1px solid rgba(212,165,40,0.3);border-radius:12px;padding:17px">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#ffd700;letter-spacing:1.8px;margin-bottom:14px;font-weight:700">🎯 OUR 3 PICKS</div>
+    <div style="background:rgba(0,0,0,0.3);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:17px">
+      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#fca5a5;letter-spacing:1.8px;margin-bottom:14px;font-weight:700">🎯 OUR 3 PICKS - DRAMATIC NIGHT</div>
       
-      <div style="margin-bottom:14px;padding:14px;background:rgba(34,197,94,0.1);border-left:4px solid #22c55e;border-radius:7px">
+      <div style="margin-bottom:14px;padding:14px;background:rgba(239,68,68,0.06);border-left:4px solid #ef4444;border-radius:7px">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;flex-wrap:wrap;gap:5px">
-          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#86efac">✅ PRIMARY: France Win</div>
-          <span style="background:rgba(34,197,94,0.25);color:#86efac;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">80% · ODDS 1.25</span>
+          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#fca5a5">❌ France Win</div>
+          <span style="background:rgba(239,68,68,0.25);color:#fca5a5;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">LOST</span>
         </div>
-        <div style="font-size:14px;color:#8a8d9a">10 unbeaten in Nantes · 8 wins in last 9 matches · 2+ goals scored in every match</div>
+        <div style="font-size:14px;color:#8a8d9a">10-match unbeaten run in Nantes - broken! · Pepe & Diomande led African giants to historic win</div>
       </div>
 
       <div style="margin-bottom:14px;padding:14px;background:rgba(34,197,94,0.1);border-left:4px solid #22c55e;border-radius:7px">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;flex-wrap:wrap;gap:5px">
           <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#86efac">✅ Over 2.5 Goals</div>
-          <span style="background:rgba(34,197,94,0.25);color:#86efac;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">65% · ODDS 1.57</span>
+          <span style="background:rgba(34,197,94,0.25);color:#86efac;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">WON</span>
         </div>
-        <div style="font-size:14px;color:#8a8d9a">France 2.94 xG at home · Ivory Coast can score (Pepe, Wahi) · solid value</div>
+        <div style="font-size:14px;color:#86efac">3 goals in match (1:2) · Exactly as predicted · Solid value at 1.57 odds</div>
       </div>
 
-      <div style="padding:14px;background:rgba(34,197,94,0.1);border-left:4px solid #22c55e;border-radius:7px">
+      <div style="padding:14px;background:rgba(239,68,68,0.06);border-left:4px solid #ef4444;border-radius:7px">
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:5px;flex-wrap:wrap;gap:5px">
-          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#86efac">✅ France Over 1.5 Goals</div>
-          <span style="background:rgba(34,197,94,0.25);color:#86efac;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">70% · ODDS 1.40</span>
+          <div style="font-family:'Cinzel',serif;font-size:19px;font-weight:900;color:#fca5a5">❌ France Over 1.5</div>
+          <span style="background:rgba(239,68,68,0.25);color:#fca5a5;padding:4px 12px;border-radius:5px;font-size:13px;font-weight:700;letter-spacing:1.2px">LOST</span>
         </div>
-        <div style="font-size:14px;color:#8a8d9a">Scored in 100% of season · 50% achieve 3+ goals · Mbappé hungry for record</div>
+        <div style="font-size:14px;color:#8a8d9a">France only managed 1 goal · Ivory Coast's African defense held firm · Without Saliba, the French defense collapsed</div>
       </div>
-    </div>
-  </div>
 
-  <div style="padding:0 26px 17px">
-    <div style="background:rgba(255,255,255,0.03);border-radius:12px;padding:14px;text-align:center">
-      <div style="font-family:'Orbitron',sans-serif;font-size:13px;color:#ffd700;letter-spacing:1.8px;margin-bottom:7px;font-weight:700">⚽ OVER 2.5 GOALS: 65%</div>
-      <div style="background:rgba(0,0,0,0.4);border-radius:7px;height:14px;overflow:hidden">
-        <div style="background:linear-gradient(90deg,#22c55e,#86efac);height:100%;width:65%"></div>
+      <div style="margin-top:14px;padding:13px;background:rgba(255,215,0,0.08);border:1px solid rgba(255,215,0,0.3);border-radius:7px;text-align:center">
+        <div style="font-size:14px;color:#ffd700;font-weight:700">💡 Ivory Coast (#34 FIFA) beat France (#1 FIFA) - the biggest upset of warmups. A lesson in humility before the World Cup.</div>
       </div>
-      <div style="font-size:12px;color:#64748b;margin-top:7px">Chance of 3+ total goals in the match</div>
     </div>
   </div>
 
@@ -2704,6 +2674,7 @@ main{padding:10px 10px 60px}
 </div>
 </div>
 <!-- ===== END CARD: FRANCE_VS_IVORY_COAST ===== -->
+
 
 
 <!-- ===== HOT CARD: NETHERLANDS_VS_ALGERIA - FT 0:1 LOST ===== -->
